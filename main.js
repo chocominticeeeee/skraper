@@ -6,8 +6,7 @@ const jsonFilePath = "./templates.json";
 
 function createWindow() {
     const win = new BrowserWindow({
-        // width: 600,
-        width: 1000,
+        width: 600,
         height: 800,
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
@@ -15,7 +14,7 @@ function createWindow() {
     });
     win.setMenuBarVisibility(false);
     win.loadFile("index.html");
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
 
     ipcMain.handle("skrape", async (event, args) => {
         if (args.url !== "" && args.selector !== "") {

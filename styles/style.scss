@@ -3,8 +3,8 @@ $serachAreaWidth:70px;
 .serachArea{
     display: flex;
     & .inputs{
-        width: calc(100% - $serachAreaWidth);
-        // width: 100%;
+        // width: calc(100% - $serachAreaWidth);
+        width: 100%;
     }
     & .button{
         width: $serachAreaWidth;
@@ -18,6 +18,7 @@ $serachAreaWidth:70px;
             position: absolute;
             top: 0;
             right: 0;
+            text-wrap: nowrap;
         }
     }
 }

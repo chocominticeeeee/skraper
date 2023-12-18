@@ -2,7 +2,7 @@
   display: flex;
 }
 .serachArea .inputs {
-  width: calc(100% - 70px);
+  width: 100%;
 }
 .serachArea .button {
   width: 70px;
@@ -15,4 +15,5 @@
   position: absolute;
   top: 0;
   right: 0;
+  text-wrap: nowrap;
 }/*# sourceMappingURL=style.css.map */

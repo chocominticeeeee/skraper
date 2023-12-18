@@ -1,18 +1,6 @@
 [
   {
-    "url": "https://sms-japan.com/",
-    "selector": ".text-block-6"
-  },
-  {
-    "url": "https://www.smsonline.cloud/ja/country/Japan",
-    "selector": ".css-18j379d"
-  },
-  {
-    "url": "https://www.smsonline.cloud/ja/country/Japan/1",
-    "selector": ".css-18j379d"
-  },
-  {
-    "url": "https://www.smsonline.cloud/ja/country/Japan/2",
-    "selector": ".css-18j379d"
+    "url": "https://ava.pmang.jp/",
+    "selector": "#info6 .ttl"
   }
 ]
