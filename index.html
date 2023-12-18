@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SKRAPER</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="https://unpkg.com/akar-icons-fonts"></script>
+    </head>
+    <body>
+        <main class="px-2 py-2">
+            <!-- 検索エリア切り替えボタン -->
+            <div class="d-grid gap-2">
+                <i
+                    class="btn btn-primary ai-chevron-down searchArrow"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#search"
+                >
+                </i>
+            </div>
+            <!-- 折り畳みエリア -->
+            <div class="collapse" id="search">
+                <div class="card card-body">
+                    <!-- テンプレート表示エリア -->
+                    <ul class="list-group templates mb-3"></ul>
+
+                    <!-- 検索エリア -->
+                    <div class="serachArea mb-3">
+                        <div class="inputs">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"
+                                    >ターゲットURL</span
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="https://xxx.com"
+                                    id="targetUrl"
+                                />
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"
+                                    >セレクター</span
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder=".selector"
+                                    id="targetSelector"
+                                />
+                            </div>
+                        </div>
+                        <button
+                        class="btn btn-primary"
+                        type="button"
+                        id="saveTemplate"
+                    >
+                        保存
+                    </button>
+                    </div>
+
+                    <!-- スクレイピング実行 -->
+                    <div class="d-grid gap-2">
+                        <button
+                            class="btn btn-primary"
+                            type="button"
+                            id="runSkrape"
+                        >
+                            実行
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- リザルト表示エリア -->
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5>リザルト</h5>
+                    <p>ステータス:<span id="status">待機中...</span></p>
+                    <ul class="list-group" id="result"></ul>
+                </div>
+            </div>
+        </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+        <script src="renderer.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+$serachAreaWidth:70px;
+
+.serachArea{
+    display: flex;
+    & .inputs{
+        width: calc(100% - $serachAreaWidth);
+        // width: 100%;
+    }
+    & .button{
+        width: $serachAreaWidth;
+    }
+}
+
+.templates{
+    & li{
+        position: relative;
+        & .deleteButton{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

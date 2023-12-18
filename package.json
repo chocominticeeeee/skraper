@@ -1,0 +1,21 @@
+{
+    "name": "skraper",
+    "version": "1.0.0",
+    "description": "スクレイピングを行うツールです",
+    "main": "main.js",
+    "author": "babumiya chocomin",
+    "license": "MIT",
+    "devDependencies": {
+        "jsdom": "^23.0.1",
+        "puppeteer": "^21.6.1"
+    },
+    "scripts": {
+        "start": "electron ."
+    },
+    "dependencies": {
+        "electron": "^28.0.0",
+        "electron-packager": "^17.1.2",
+        "jsdom": "^23.0.1",
+        "puppeteer": "^21.6.1"
+    }
+}
